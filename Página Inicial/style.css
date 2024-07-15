@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/Background.svg);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Elementos Principais */
+main{
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+main .titulo{
+    font-family: "Koulen", sans-serif;
+    font-size: 40px;
+    color: white;
+    line-height: 50px;
+}
+
+main #nome{
+    font-size: 80px;
+}
+
+main .btn{
+    background-color: yellow;
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+main a{
+    font-family: "Inter", sans-serif;
+    padding-left: 20px;
+    text-decoration: none;
+    color: yellow;
+    margin-top: 10px
+}
+
+main .btn span{
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+
+#novidades{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+#novidades img{
+    height: 400px;
+    margin: 15px;
+}
+
+#novidades span{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+/* Objetos Secundários */
+#estrelas{
+    position: absolute;
+    width: 100%;
+    top: -40px;
+}
+
+#pipoca{
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+}
