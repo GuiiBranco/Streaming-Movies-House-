@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/Background.svg);
+    height: 100vh;
+}
+
+.menu img{
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+section{
+    position: relative;
+}
+
+section:hover > .sessao::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+.sessao{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    overflow-x: auto;
+}
+
+.gradiente{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+}
+
+.gradiente .fadeout{
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0), rgb(0, 0, 46));
+    width: 50px;
+    height: 200px;
+}
+
+.gradiente .fadein{
+    background: linear-gradient(-90deg,rgba(255, 255, 255, 0), rgb(0, 0, 46));
+    width: 50px;
+    height: 200px;
+}
+
+.sessao::-webkit-scrollbar{
+    height: 10px;
+}
+
+.sessao::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), red, rgba(255, 255, 255, 0));
+    border-radius: 50px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.sessao span{
+    font-family: "Koulen", sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.sessao .navfilmes{
+    width: max-content;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.sessao .navfilmes .filme{
+    background-color: white;
+    height: 180px;
+    width: 130px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Hover filmes */
+.filme:hover{
+    border-style: solid;
+    border-width: 5px;
+    border-color: yellow;
+}
