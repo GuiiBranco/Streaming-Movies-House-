@@ -139,7 +139,7 @@ section:hover > .sessao::-webkit-scrollbar-thumb{
 .sessao .navfilmes .filme{
     background-color: white;
     height: 180px;
-    width: 130px;
+    width: 126px;
     border-radius: 5px;
     margin: 10px;
 }
@@ -149,4 +149,10 @@ section:hover > .sessao::-webkit-scrollbar-thumb{
     border-style: solid;
     border-width: 5px;
     border-color: yellow;
+}
+
+.filme .capa{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
 }

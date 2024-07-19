@@ -1,9 +1,16 @@
+<?php
+    require_once "../conexao.php";
+    $sqlSelectFilmes = "SELECT * FROM filme";
+    $stmt = $conexao -> query($sqlSelectFilmes);
+    $filmes = $stmt -> fetchAll(PDO::FETCH_OBJ);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Seleção de filmes/style.css">
     <script src="script.js" defer></script>
     <title>Movies House🍿</title>
 </head>
@@ -27,39 +34,15 @@
         <span class="titulo">Guia de Novidades</span>
         <div class="sessao">
             <div class="navfilmes">
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
-                <div class="filme">
-                    <img src="">
-                </div>
+                <?php
+                    foreach( $filmes as $filme ) {
+                ?>
+                    <div class="filme">
+                        <img class="capa" src=" <?= $filme->capa; ?> ">
+                    </div>
+                <?php
+                    }
+                ?>
             </div>
         </div>
     </section>
