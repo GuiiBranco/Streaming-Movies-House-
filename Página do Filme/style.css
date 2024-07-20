@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+main{
+    height: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+
+#seta{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+span{
+    color: white;
+    font-size: 20px;
+    font-family: "Koulen", sans-serif;
+}
+
+#nome{
+    font-size: 40px;
+}
+
+button{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Koulen", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#addListas a img{
+    width: 30px;
+}
+
+#desc{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+#splashart{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#splashart div{
+    position: absolute;
+    background: linear-gradient(90deg, black, rgba(255, 255, 255, 0));
+    height: 100%;
+    width: 100%;
+}
+
+#splashart #background{
+    height: 100%;
+}
+
+#splashart #classificacao{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 80px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 12px;
+}

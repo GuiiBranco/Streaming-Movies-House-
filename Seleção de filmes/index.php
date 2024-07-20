@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Seleção de filmes/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Movies House🍿</title>
 </head>
@@ -37,9 +37,11 @@
                 <?php
                     foreach( $filmes as $filme ) {
                 ?>
-                    <div class="filme">
-                        <img class="capa" src=" <?= $filme->capa; ?> ">
-                    </div>
+                    <a href="../Página do Filme/filme.php">
+                        <div class="filme">
+                            <img class="capa" src=" <?= $filme->capa; ?> ">
+                        </div>
+                    </a>
                 <?php
                     }
                 ?>
